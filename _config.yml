@@ -9,5 +9,5 @@ search_enabled: true
 nav_sort: nav_order
 
 # Footer configuration for Just the Docs
-footer_content: "Botanical Archivist (Orchid Tracker) Technical Documentation &copy; 2026. Built with Just the Docs and hosted on GitHub Pages."
+footer_content: "includes/footer_custom.html"
 last_edit_timestamp: true # Optional: Shows 'Page last modified' automatically
