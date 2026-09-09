@@ -1,45 +1,9 @@
-title: "Botanical Archivist"
-subtitle: "Orchid Tracker Technical Documentation"
-description: "Technical documentation, database schemas, and maintenance guides for Orchid Tracker."
-url: "https://thepottedhistorian.github.io"
-baseurl: "/OrchidTrackerDocs"
+title: Orchid Tracker Documentation
+description: Official documentation and user guide for Orchid Tracker.
+remote_theme: just-the-docs/just-the-docs
 
-# Theme Configuration
-theme: "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dark"
+# Enable instant search in the left sidebar
+search_enabled: true
 
-# Author Profile (Sidebar Branding)
-author:
-  name: "The Potted Historian"
-  avatar: "/assets/images/wax_seal.png"
-  bio: "Tracing the Ancient Roots of a Modern Collection"
-  location: "North Carolina"
-  links:
-    - label: "Main Website"
-      icon: "fas fa-fw fa-globe"
-      url: "https://www.thepottedhistorian.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/thepottedhistorian"
-
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-remote-theme
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
-      sidebar:
-        nav: "docs"
+# Order navigation items by explicit nav_order values in each file
+nav_sort: nav_order
