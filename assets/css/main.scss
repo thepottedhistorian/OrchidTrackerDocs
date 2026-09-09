@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the two dashes lines above)
+---
+
+// 1. Core Color Palette Overrides (The Potted Historian Palette)
+$background-color: #22211d !default;
+$text-color: #d4c5b2 !default;
+$muted-text-color: #b8a894 !default;
+$primary-color: #a67c52 !default;
+$link-color: #c9a97e !default;
+$link-color-hover: #f5ebd9 !default;
+$border-color: #38342e !default;
+
+// 2. Header & Code Block Styles
+$base-font-family: Georgia, "Times New Roman", serif !default;
+$header-font-family: Georgia, "Times New Roman", serif !default;
+$code-background-color: #1a1916 !default;
+
+// 3. Navigation & Sidebar Palette
+$sidebar-background-color: #1a1916 !default;
+$footer-background-color: #1a1916 !default;
+
+// 4. Import Minimal Mistakes Base Styles
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+/* Custom Tweaks for The Potted Historian Branding */
+.site-title {
+  font-family: Georgia, serif !important;
+  color: #f5ebd9 !important;
+}
+
+.author__avatar img {
+  border: 2px solid #a67c52;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.nav__list .active {
+  color: #f5ebd9 !important;
+  font-weight: bold;
+}
