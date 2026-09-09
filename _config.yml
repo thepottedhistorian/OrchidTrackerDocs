@@ -1,13 +1,23 @@
-title: Orchid Tracker Documentation
-description: Official documentation and user guide for Orchid Tracker.
-remote_theme: just-the-docs/just-the-docs
+title: "Botanical Archivist"
+subtitle: "Orchid Tracker Technical Documentation"
+description: "Technical documentation, database schemas, and maintenance guides for Orchid Tracker."
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "dark" # Palette options: dark, contrast, plum, dirt
 
-# Enable instant search in the left sidebar
-search_enabled: true
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-# Order navigation items by explicit nav_order values in each file
-nav_sort: nav_order
-
-# Footer configuration for Just the Docs
-footer_content: "includes/footer_custom.html"
-last_edit_timestamp: true # Optional: Shows 'Page last modified' automatically
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+      sidebar:
+        nav: "docs"
