@@ -7,9 +7,23 @@ permalink: /docs/overview/
 
 # Project Overview
 
-Orchid Tracker is designed for precise record-keeping, microclimate logging, and collection management across diverse orchid species and intergeneric hybrids.
+Orchid Tracker was created to eliminate spreadsheet clutter and provide a structured, calm environment for managing large orchid collections. It combines real-time collection metrics with specimen-level detail, allowing growers to track taxonomic lineage, microclimate requirements, vendor sources, and care routines.
 
-## Core Scope
-* **Specimen Archiving:** Detailed taxonomy, parentage, accession tracking, and acquisition logging.
-* **Environmental Telemetry:** Integration with microclimate sensors to track temperature, humidity, and lighting cycles.
-* **Care Schedules:** Routine management for watering, custom fertilizer blends, and media repotting histories.
+---
+
+## Core Operational Features
+
+* **Master Inventory Ledger**: Features a sortable, filterable table display with fixed header rows and status indicators for active specimens.
+* **Specimen Passport Modals**: Individual modal cards providing comprehensive details for each plant, including acquisition data, taxonomic lineage, bloom records, repotting history, and care notes.
+* **Bulk Maintenance Engine**: Dedicated interface for executing multi-plant watering and repotting routines using range parsing (e.g., `1-10, 15`).
+* **Historical Archive**: Retires deceased or re-homed specimens into a separate `archived_orchids` database table, preserving historical records without cluttering active inventory.
+
+---
+
+## Visual Design & Theme
+
+Built on a **CTk Glass Dark Palette**, the visual architecture is designed to minimize visual fatigue during extended logging sessions:
+
+* **Background Tone**: `#020617` (Deep dark slate)
+* **Panel Tone**: `#0F172A` / `#111827` (Layered contrast frames)
+* **Status Accents**: `#4ADE80` (In Bloom / Success), `#EF4444` (Alerts / Errors), and `#60A5FA` (Primary Action Accents)
