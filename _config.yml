@@ -5,6 +5,9 @@ baseurl: "/OrchidTrackerDocs"
 
 remote_theme: just-the-docs/just-the-docs
 
+plugins:
+  - jekyll-remote-theme
+
 # Color & Branding Settings
 color_scheme: "dark"
 logo: "/assets/images/wax_seal.png"
