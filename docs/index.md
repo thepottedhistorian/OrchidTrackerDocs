@@ -7,4 +7,10 @@ permalink: /
 
 # Orchid Tracker Documentation
 
-Welcome to the official Orchid Tracker documentation. Use the navigation menu above to explore architecture, modules, and setup guides.
+Welcome to the official Orchid Tracker documentation. Use the sidebar menu or search bar above to explore system architecture, database design, and module guides.
+
+## Quick Links
+* [Overview](docs/overview)
+* [System Architecture](docs/architecture)
+* [Core Modules](docs/modules)
+* [Database Regeneration](docs/regeneration)
