@@ -1,13 +1,14 @@
 ---
-layout: page
+layout: default
 title: Version History
+nav_order: 8
 permalink: /docs/version-history/
 ---
 
 # Version History & Changelog
 
-Record of major updates, enhancements, and bug fixes across releases.
+Record of major updates, release notes, and version maintenance.
 
 ## v1.0.0
-* Initial release featuring core specimen logging and local SQLite database integration.
-* CustomTkinter desktop interface setup.
+* Initial desktop release featuring specimen inventory logging and local SQLite storage.
+* Integrated CustomTkinter user interface components.
