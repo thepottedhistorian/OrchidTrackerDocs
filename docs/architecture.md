@@ -12,8 +12,7 @@ Orchid Tracker is constructed as a modular Python desktop application utilizing 
 ---
 
 ## Directory Architecture
-
-```text
+```
 orchid_archivist/
 │
 ├── config.py             # Palette, theme settings, and system paths
@@ -36,10 +35,11 @@ orchid_archivist/
         ├── bulk_ops_view.py
         └── inventory_view.py
 ```
+---
 
-Relational Database Schema
+## Relational Database Schema
+
 The SQLite database (orchids.db) relies on primary-foreign key relationships linking child logs to master orchid records.
-
 ```
 -- Master Inventory Table
 CREATE TABLE orchids (
@@ -109,3 +109,68 @@ CREATE TABLE observation_notes (
     FOREIGN KEY(orchid_id) REFERENCES orchids(id)
 );
 ```
+---
+
+## Archive Database Table Schema
+
+To preserve historical records without cluttering active inventory, retired or deceased specimens are transferred to the archived_orchids master table.
+```
+CREATE TABLE archived_orchids (
+    archive_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER,
+    original_id INTEGER,
+    orchid_name TEXT,
+    genus TEXT,
+    species_hybrid_lineage TEXT,
+    acquisition_date TEXT,
+    archive_date TEXT,
+    archived_date TEXT,
+    final_status TEXT,
+    disposition_status TEXT,
+    disposition_notes TEXT,
+    general_notes TEXT,
+    acquisition_cost TEXT
+);
+```
+---
+
+## Schema Auto-Migration Guard Engine
+
+The database.py initialization sequence contains an automated schema migration guard. On application startup, PRAGMA table_info() inspects active database tables and injects missing columns dynamically without requiring manual SQL scripts or dropping existing records.
+```
+-- Migration check for orchids table
+PRAGMA table_info(orchids);
+-- Conditionally executed if column is missing:
+ALTER TABLE orchids ADD COLUMN vendor_source TEXT;
+ALTER TABLE orchids ADD COLUMN rest_period TEXT;
+
+-- Migration check for archived_orchids table
+PRAGMA table_info(archived_orchids);
+-- Conditionally executed if column is missing:
+ALTER TABLE archived_orchids ADD COLUMN acquisition_cost TEXT;
+ALTER TABLE archived_orchids ADD COLUMN species_hybrid_lineage TEXT;
+```
+---
+
+## Application State & Memory Lifecycle
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        main.py (Application Root)                      │
+│  - Registers Windows AppUserModelID                                    │
+│  - Configures CustomTkinter CTk Base Frame & Theme                     │
+│  - Builds Native Tkinter Menu Bar & System Status Bar                  │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+         ┌──────────────────────────┴──────────────────────────┐
+         ▼                                                     ▼
+┌─────────────────────────────────┐           ┌──────────────────────────────────┐
+│      database.py Engine         │           │       View Manager Stack         │
+│  - Connects to orchids.db       │           │  - InventoryView                 │
+│  - Executes PRAGMA Auto-Guard   │           │  - AccessionView                 │
+│  - Runs Integrity & VACUUM      │           │  - BulkOpsView                   │
+└─────────────────────────────────┘           └──────────────────────────────────┘
+```
+1. **Initialization Phase**: main.py invokes init_database() from database.py, connecting to orchids.db and creating tables or running auto-migrations.
+2. **OS & UI Registration**: Registers the process explicitly under thepottedhistorian.orchidtracker.archivist.1.0 via Windows ctypes.windll to ensure taskbar pinning and custom icon rendering.
+3. **View Instantiation**: Initializes primary views (InventoryView, AccessionView, BulkOpsView) within content_frame and displays the default Inventory view.
+4. **State Management**: Navigation switches views by invoking .pack_forget() on hidden frames and packing the selected view into the active layout frame.
