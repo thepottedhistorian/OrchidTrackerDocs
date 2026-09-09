@@ -1,6 +1,9 @@
 ---
-# Front matter required for Jekyll SCSS compilation
+# Front matter required for Jekyll
 ---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
+@import "minimal-mistakes";
 
 // 1. Core Color Palette Overrides
 $background-color: #22211d;
