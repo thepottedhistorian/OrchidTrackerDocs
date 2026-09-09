@@ -45,6 +45,7 @@ COLOR_STATUS_BLUE = "#60A5FA"   # Info / Primary action accents
 ## Appendix C: Relational Child Log Schemas
 
 ### `bloom_log`
+
 | Column Name | Data Type | Constraints | Description |
 | :--- | :--- | :--- | :--- |
 | `log_id` | `INTEGER` | `PRIMARY KEY AUTOINCREMENT` | Log entry unique ID |
@@ -55,6 +56,7 @@ COLOR_STATUS_BLUE = "#60A5FA"   # Info / Primary action accents
 | `notes` | `TEXT` | — | Observational bloom notes |
 
 ### `repotting_log`
+
 | Column Name | Data Type | Constraints | Description |
 | :--- | :--- | :--- | :--- |
 | `log_id` | `INTEGER` | `PRIMARY KEY AUTOINCREMENT` | Log entry unique ID |
@@ -63,6 +65,7 @@ COLOR_STATUS_BLUE = "#60A5FA"   # Info / Primary action accents
 | `notes` | `TEXT` | — | Substrate blend, pot size, or root notes |
 
 ### `watering_logs`
+
 | Column Name | Data Type | Constraints | Description |
 | :--- | :--- | :--- | :--- |
 | `id` | `INTEGER` | `PRIMARY KEY AUTOINCREMENT` | Log entry unique ID |
@@ -72,14 +75,13 @@ COLOR_STATUS_BLUE = "#60A5FA"   # Info / Primary action accents
 | `notes` | `TEXT` | — | Fertilizer additives or water quality notes |
 
 ### `observation_notes`
+
 | Column Name | Data Type | Constraints | Description |
 | :--- | :--- | :--- | :--- |
 | `id` | `INTEGER` | `PRIMARY KEY AUTOINCREMENT` | Log entry unique ID |
 | `orchid_id` | `INTEGER` | `FOREIGN KEY -> orchids(id)` | Parent specimen reference ID |
 | `log_date` | `TEXT` | — | Observation record date |
 | `observation` | `TEXT` | — | Detailed health or growth notes |
-
----
 
 ## Appendix D: Legacy Excel Column Mapping (`orchid_importer_inventory.py`)
 
