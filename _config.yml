@@ -1,9 +1,14 @@
 title: Orchid Tracker Documentation
 description: Official documentation and user guide for Orchid Tracker.
+url: "https://thepottedhistorian.github.io"
+baseurl: "/OrchidTrackerDocs"
+
 remote_theme: just-the-docs/just-the-docs
 
-# Enable instant search in the left sidebar
-search_enabled: true
+# Color & Branding Settings
+color_scheme: "dark"
+logo: "/assets/images/wax_seal.png"
 
-# Order navigation items by explicit nav_order values in each file
+# Navigation & Search
+search_enabled: true
 nav_sort: nav_order
