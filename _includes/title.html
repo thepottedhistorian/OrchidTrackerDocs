@@ -1,0 +1,6 @@
+{% if site.logo %}
+  <div class="site-logo" role="img" aria-label="{{ site.title }}"></div>
+  <span class="site-title" style="margin-left: 8px; font-family: Georgia, serif; color: #ffffff; font-size: 1.1rem;">{{ site.title }}</span>
+{% else %}
+  {{ site.title }}
+{% endif %}
