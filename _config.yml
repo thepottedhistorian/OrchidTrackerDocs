@@ -1,8 +1,8 @@
 title: "Botanical Archivist"
 subtitle: "Orchid Tracker Technical Documentation"
 description: "Technical documentation, database schemas, and maintenance guides for Orchid Tracker."
-url: "https://thepottedhistorian.github.io" # Base domain for GitHub Pages
-baseurl: "/OrchidTrackerDocs" # Repository name path
+url: "https://thepottedhistorian.github.io"
+baseurl: "/OrchidTrackerDocs"
 
 # Theme Configuration
 theme: "minimal-mistakes-jekyll"
@@ -14,7 +14,7 @@ author:
   name: "The Potted Historian"
   avatar: "/assets/images/wax_seal.png"
   bio: "Tracing the Ancient Roots of a Modern Collection"
-  location: "Trinity, North Carolina"
+  location: "North Carolina"
   links:
     - label: "Main Website"
       icon: "fas fa-fw fa-globe"
