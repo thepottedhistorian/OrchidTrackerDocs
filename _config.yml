@@ -1,9 +1,28 @@
 title: "Botanical Archivist"
 subtitle: "Orchid Tracker Technical Documentation"
 description: "Technical documentation, database schemas, and maintenance guides for Orchid Tracker."
-theme: "minimal-mistakes-jekyll"
-minimal_mistakes_skin: "dark" # Palette options: dark, contrast, plum, dirt
+url: "https://thepottedhistorian.github.io" # Base domain for GitHub Pages
+baseurl: "/OrchidTrackerDocs" # Repository name path
 
+# Theme Configuration
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "dark"
+
+# Author Profile (Sidebar Branding)
+author:
+  name: "The Potted Historian"
+  avatar: "/assets/images/wax_seal.png"
+  bio: "Tracing the Ancient Roots of a Modern Collection"
+  location: "Trinity, North Carolina"
+  links:
+    - label: "Main Website"
+      icon: "fas fa-fw fa-globe"
+      url: "https://www.thepottedhistorian.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/thepottedhistorian"
+
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -12,6 +31,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Defaults
 defaults:
   - scope:
       path: ""
