@@ -5,7 +5,8 @@ url: "https://thepottedhistorian.github.io"
 baseurl: "/OrchidTrackerDocs"
 
 # Theme Configuration
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"  # REMOVE THIS LINE
 minimal_mistakes_skin: "dark"
 
 # Author Profile (Sidebar Branding)
