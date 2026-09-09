@@ -13,24 +13,3 @@ logo: "/assets/images/wax_seal.png"
 # Navigation & Search
 search_enabled: true
 nav_sort: nav_order
-
-// Flexbox layout to align logo image and site title side-by-side
-.site-header {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-
-  .site-title {
-    display: inline-block !important;
-    font-family: Georgia, serif !important;
-    color: #f5ebd9 !important;
-    font-size: 1.1rem !important;
-    margin: 0 !important;
-  }
-
-  .site-logo {
-    max-height: 40px !important;
-    width: auto !important;
-    margin: 0 !important;
-  }
-}
