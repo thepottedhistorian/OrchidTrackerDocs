@@ -1,16 +1,17 @@
 ---
-layout: page
-title: Regeneration
+layout: default
+title: Database Regeneration
+nav_order: 5
 permalink: /docs/regeneration/
 ---
 
 # Database Regeneration & Maintenance
 
-Procedures for resetting, backing up, and regenerating application state and local databases.
+Procedures for resetting, executing migrations, backing up, and restoring the application state.
 
 ## Schema Migrations
-Instructions for executing database migrations using SQLite scripts without data loss.
+Instructions for executing SQLite schema migrations safely using upgrade scripts without risking data loss.
 
 ## Backup & Recovery
-* **Manual Backups:** How to locate and archive `.db` files locally.
-* **Restoration:** Steps to restore application state from a known stable snapshot.
+* **Manual Backups:** Locate and archive local `.db` files to secondary storage or cloud drives.
+* **Restoration:** Steps to replace or restore application database state from a known stable snapshot.
