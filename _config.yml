@@ -1,0 +1,15 @@
+title: Orchid Tracker Documentation
+description: Official documentation and user guide for Orchid Tracker.
+theme: minima
+
+# Navigation links pointing directly into the docs/ folder
+header_pages:
+  - docs/index.md
+  - docs/overview.md
+  - docs/architecture.md
+  - docs/modules.md
+  - docs/regeneration.md
+  - docs/help.md
+  - docs/roadmap.md
+  - docs/version-history.md
+  - docs/appendices.md
