@@ -1,12 +1,10 @@
-title: Orchid Tracker Documentation
-description: Official documentation and user guide for Orchid Tracker.
+title: "Orchid Tracker Documentation"
+description: "Official documentation and user guide for Orchid Tracker."
 url: "https://thepottedhistorian.github.io"
 baseurl: "/OrchidTrackerDocs"
 
+# Theme Configuration
 remote_theme: just-the-docs/just-the-docs
-
-plugins:
-  - jekyll-remote-theme
 
 # Color & Branding Settings
 color_scheme: "dark"
