@@ -1,7 +1,7 @@
 {% if site.logo %}
-  <div style="display: flex; align-items: center; gap: 12px; white-space: nowrap;">
-    <div class="site-logo" role="img" aria-label="{{ site.title }}"></div>
-    <span class="site-title" style="font-family: Georgia, serif; color: #ffffff; font-size: 1rem; white-space: nowrap;">The Potted Historian</span>
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="height: 40px; width: auto;">
+    <span style="font-family: Georgia, serif; color: #ffffff; font-size: 1rem;">The Potted Historian</span>
   </div>
 {% else %}
   {{ site.title }}
