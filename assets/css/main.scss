@@ -1,11 +1,8 @@
 ---
-# Front matter required for SCSS compilation
+# Front matter required for Jekyll SCSS compilation
 ---
 
-// 1. Skin setup
-@import "minimal-mistakes/skins/dark";
-
-// 2. Custom Brand Variable Overrides
+// 1. Core Color Palette Overrides
 $background-color: #22211d;
 $text-color: #d4c5b2;
 $muted-text-color: #b8a894;
@@ -13,8 +10,12 @@ $primary-color: #a67c52;
 $link-color: #c9a97e;
 $link-color-hover: #f5ebd9;
 $border-color: #38342e;
+
+// 2. Header & Code Block Styles
 $base-font-family: Georgia, "Times New Roman", serif;
 $header-font-family: Georgia, "Times New Roman", serif;
+$code-background-color: #1a1916;
 
-// 3. Import Theme Core
-@import "minimal-mistakes";
+// 3. Navigation & Sidebar Palette
+$sidebar-background-color: #1a1916;
+$footer-background-color: #1a1916;
