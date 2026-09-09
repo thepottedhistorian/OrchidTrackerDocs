@@ -6,7 +6,6 @@ baseurl: "/OrchidTrackerDocs"
 
 # Theme Configuration
 theme: "minimal-mistakes-jekyll"
-# remote_theme: "mmistakes/minimal-mistakes@4.24.0"  # REMOVE THIS LINE
 minimal_mistakes_skin: "dark"
 
 # Author Profile (Sidebar Branding)
@@ -31,7 +30,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-remote-theme
 
 # Defaults
 defaults:
