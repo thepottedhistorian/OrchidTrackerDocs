@@ -1,17 +1,18 @@
 ---
-layout: page
+layout: default
 title: Roadmap
+nav_order: 7
 permalink: /docs/roadmap/
 ---
 
 # Development Roadmap
 
-Planned features and future release goals for Orchid Tracker.
+Planned features and project development milestones for upcoming releases.
 
-## Near-Term Goals
-* Enhanced sensor telemetry logging and visualization charts.
-* Expanded media and pot configuration options.
+## Near-Term Objectives
+* Advanced sensor telemetry visual graphs and historical trend analysis.
+* Expanded media and pot configuration options for mounted vs. potted specimens.
 
 ## Long-Term Vision
-* Automated export routines for CSV/JSON reporting.
-* Custom notification triggers for watering and fertilization cycles.
+* Automated CSV/JSON data export tools for offline archiving.
+* Custom notification triggers for watering, feeding, and media replacement cycles.
