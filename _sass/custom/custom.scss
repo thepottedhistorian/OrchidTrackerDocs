@@ -1,0 +1,26 @@
+// 1. Core Brand Colors (The Potted Historian Palette)
+$body-background-color: #22211d;
+$sidebar-color: #1a1916;
+$body-text-color: #d4c5b2;
+$link-color: #c9a97e;
+$border-color: #38342e;
+
+// 2. Typography
+$body-font-family: Georgia, "Times New Roman", serif;
+$header-font-family: Georgia, "Times New Roman", serif;
+
+// 3. Navigation & Code Blocks
+$nav-child-link-color: #b8a894;
+$code-background-color: #1a1916;
+$btn-primary-color: #a67c52;
+
+// Custom overrides for sidebar header
+.site-title {
+  font-family: Georgia, serif !important;
+  color: #f5ebd9 !important;
+}
+
+.site-header {
+  background-color: #1a1916 !important;
+  border-bottom: 1px solid #38342e !important;
+}
