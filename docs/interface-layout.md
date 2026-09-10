@@ -13,9 +13,7 @@ This section details the core operational cards, tabbed ledgers, and telemetry d
 
 The Specimen Passport Modal provides a centralized view for individual plant management, combining botanical metadata, care parameters, and historical logging.
 
-<a href="{{ '/assets/images/passportcard1.png' | relative_url }}" target="_blank" title="Click to view full image">
-  <img src="{{ '/assets/images/passportcard1.png' | relative_url }}" alt="Specimen Passport Modal - Phalaenopsis amabilis" style="width: 100%; cursor: zoom-in; border-radius: 4px; border: 1px solid #38342e;">
-</a>
+[![Specimen Passport Modal - Phalaenopsis amabilis](../assets/images/passportcard1.png)](../assets/images/passportcard1.png)
 
 <figcaption style="font-size: 0.85rem; color: #b8a894; font-style: italic; margin-top: 6px; margin-bottom: 24px;">
   Specimen Passport Modal displaying botanical records, care parameters, recent hydration indicators, attached imagery, and tabbed operational logs. (Click image to expand)
