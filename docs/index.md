@@ -27,13 +27,15 @@ Because it runs completely on your local machine using an isolated SQLite databa
 
 ---
 
-## Navigation & Core Topics
+## Documentation Index
 
-* **[Project Overview](docs/overview)**: Purpose, primary user workflows, dark palette aesthetics, and core collection features.
-* **[System Architecture](docs/architecture)**: Python execution loop, CustomTkinter UI framework, and full SQLite3 schema specifications.
-* **[Core Modules](docs/modules)**: In-depth breakdowns of `InventoryView`, `AccessionView`, `BulkOpsView`, and modal systems.
-* **[Database Maintenance & Migration](docs/regeneration)**: Maintenance routines, SQLite VACUUM compression, integrity checks, and Excel migration scripts.
-* **[Troubleshooting & Support](docs/help)**: Native menu bar actions, DB connection handling, diagnostic tools, and support options.
-* **[Development Roadmap](docs/roadmap)**: Planned greenhouse dashboards, care forecasting, and telemetry features.
-* **[Version History](docs/version-history)**: Release history spanning v1.0 through v1.4.0.
-* **[Appendices](docs/appendices)**: Full database schema definition, color palette constants, and file tree index.
+Use the left sidebar to navigate through the technical guide and feature breakdowns:
+
+* **[Project Overview](docs/overview)**: A high-level introduction to Orchid Tracker’s primary workflows, dark-slate visual design, and core collection tracking capabilities.
+* **[System Architecture](docs/architecture)**: Technical details on the Python application loop, CustomTkinter interface components, and the underlying SQLite3 database layout.
+* **[Core Modules](docs/modules)**: In-depth guides covering the main application views—including the `InventoryView`, `AccessionView`, `BulkOpsView`, and passport modal dialogs.
+* **[Database Maintenance & Migration](docs/regeneration)**: Practical steps for database optimization, SQLite VACUUM compression, integrity checks, and running Excel import scripts.
+* **[Troubleshooting & Support](docs/help)**: Common setup fixes, database connection troubleshooting, native menu bar tools, and diagnostic steps.
+* **[Development Roadmap](docs/roadmap)**: Upcoming features, including environmental sensor dashboards, automated care forecasting, and telemetry integrations.
+* **[Version History](docs/version-history)**: Complete release notes and changelogs detailing updates from v1.0 through v1.4.0.
+* **[Appendices](docs/appendices)**: Reference tables for the raw database schema, UI color palette constants, and complete repository file tree.
